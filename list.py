@@ -10,3 +10,9 @@ print(c *2 )    #список повторится
 
 c.append('goood')
 print(c)
+
+a.append(b)    #список в списке 
+print(a)
+
+print(len(a))   #команда определения длины списка
+
