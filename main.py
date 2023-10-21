@@ -104,3 +104,79 @@ for i in a:
 #5**3 = 125
 #7**3 = 343
 #10**3 = 1000
+
+
+
+#############Генератор последовательности range
+
+a = range(0, 10, 2)
+print(a)   # range(0, 10, 2)
+
+print(type(a))      #<class 'range'>
+
+print(a[3])     # 6
+
+ 
+a = 'Good'
+for i in range(0, 10, 1):
+    if i < len(a):
+        print(a[i] + ' - Bad')
+    else:
+        print(f'{i}' + ' - Good')
+#G - Bad
+##o - Bad
+#d - Bad
+#4 - Good
+#5 - Good
+#6 - Good
+ #- Good
+#8 - Good
+#9 - Good 
+
+
+
+
+#################   Конструкция цикла while
+
+
+i = 5
+while i < 15:
+    print('i: ', i)
+    i += 2
+
+# i:  5
+# i:  7
+# i:  9
+# i:  11
+# i:  13
+
+	
+for i in 'hello world':
+    if i == 'o':
+        break
+    print(i)
+   
+# h
+# e
+# l
+# l 
+
+
+
+###########   Команда continue
+
+for i in 'hello world':
+    if i == 'o':
+        continue
+    print(i)
+
+
+# h
+# e
+# l
+# l
+ 
+# w
+# r
+# l
+# d     
