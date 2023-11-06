@@ -24,7 +24,7 @@ else:
             else:
                 array[i, j] = a
 
-array[:, [column1, column2]] = array[:, [column2, column1]]
+array[:, [1, 2]] = array[:, [2, 1]]
 
 print(array)
 
