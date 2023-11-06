@@ -12,7 +12,7 @@ if zero_index == 'да':
             a = sin(N*(i+1) + M*(j+1))
             if a < 0:
                 array[i, j] = 0
-             else:
+            else:
                 array[i, j] = a
 else:
     array = np.zeros((N+1, M+1))
