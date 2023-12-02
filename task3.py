@@ -7,7 +7,7 @@ starttimer = time.time()
 
 for i in range(0, N):
     print(i)
-    for k in range(0,M):
+    for k in range(0, M):
         print(k)
         time.sleep(1)
 
