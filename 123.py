@@ -8,7 +8,7 @@ potato_rect = plt.Rectangle((0.4, 0.9), 0.2, 0.05, fc='orange')
 ax.add_patch(potato_rect)
 
 # Создание лужи (голубой овал)
-puddle_oval = plt.Rectangle((0.3, 0.4), 0.4, 0.2, fc='blue')
+puddle_oval = plt.Rectangle((0.3, 0), 0.4, 0.2, fc='blue')
 ax.add_patch(puddle_oval)
 
 def update(frame):
@@ -18,9 +18,11 @@ def update(frame):
     else:
         # Растекание лужи вправо и влево
         if frame % 2 == 0:
+            # Смещение лужи вправо
             puddle_oval.set_width(puddle_oval.get_width() + 0.02)
             puddle_oval.set_x(puddle_oval.get_x() - 0.01)
         else:
+            # Смещение лужи влево
             puddle_oval.set_width(puddle_oval.get_width() + 0.02)
     
     return potato_rect, puddle_oval
