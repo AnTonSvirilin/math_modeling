@@ -5,7 +5,7 @@ fig, ax = plt.subplots()
 
 plt.xlabel('Coord: x') 
 plt.ylabel('Coord: y') 
-plt.title('физика - лженаука') # Общая подпись графика
+plt.title('амням') # Общая подпись графика
 
 # Создание картошки фри
 potato_rect = plt.Rectangle((0.4, 0.9), 0.2, 0.05, color='orange', label = 'fries')
