@@ -2,3 +2,25 @@
 #в данный момент времени средствам с коэффициентом пропорциональности 0,08. Найти закон изменения инвестиций со временем и объем инвестиций за 4 года, 
 #если в начальный момент времени инвестиции составили 1000 денежных единиц.
 
+
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+
+
+t = np.arange(0, 10, 0.0001)
+
+n_0 = 1000
+
+def invest(n, t):
+    dndt = - k * n_0 * t
+    return dndt
+
+k = 0.08
+
+
+m_t = odeint(invest, n_0, t)
+
+plt.plot(t, m_t[:,0], label='nydtcnbwbb')
+
+plt.savefig('fig222.png')
