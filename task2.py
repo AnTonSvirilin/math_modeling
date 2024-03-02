@@ -12,7 +12,7 @@ def move_func(z, t):
     x, vx, y, vy = z
     
     dx_dt = vx
-    dvx_dt = -F/m 
+    dvx_dt = -(F/m + Fx)
     dy_dt = vy
     dvy_dt = - g + F/m
     
@@ -28,8 +28,8 @@ vx0 = v * np.cos(alpha)
 y0 = 0
 vy0 = v * np.sin(alpha)
 m = 0.5
-F = 0.1 * m * v**2
-
+F = 0.1 * m * v
+Fx = 5
 
 z0 = x0, vx0, y0, vy0
 
