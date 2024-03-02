@@ -63,4 +63,4 @@ ax.set_xlim(0, 20)
 	
 ax.set_ylim(0, 20)
  
-ani.save('animation.gif')
+ani.save('animation2.gif')
