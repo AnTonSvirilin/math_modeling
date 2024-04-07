@@ -1,4 +1,5 @@
 # Импортируем пакеты
+#ВОТ ЭТУ ХРЕНЬ НАДО СДЕЛАТЬ РАБОЧЕЙ ЛЮБОЙ ЦЕНОЙ!!!!!!!!!!!!
 from scipy.integrate import odeint
 import numpy as np
 import matplotlib.pyplot as plt
@@ -31,9 +32,9 @@ def animate_func(num):
               c='blue', marker='o')    # Добавляем постоянную начальную точку
    ax.plot3D(dataSet[0, 0], dataSet[1, 0], dataSet[2, 0],    
               c='black', marker='o')    # Задаем пределы для осей
-   ax.set_xlim3d([-2, 4])
-   ax.set_ylim3d([-5, 4])
-   ax.set_zlim3d([0, 4])
+   ax.set_xlim3d([-10, 10])
+   ax.set_ylim3d([-10, 10])
+   ax.set_zlim3d([0, 10])
 
    # Добавляем метки
    ax.set_title('Trajectory \nTime = ' + str(np.round(t[num], decimals=2)) + ' sec')
