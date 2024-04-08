@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
  
-plt.style.use('dark_background')
  
 fig = plt.figure()
 ax = plt.axes(xlim=(-50, 50), ylim=(-50, 50))
@@ -30,9 +29,9 @@ def animate(i):
     # добавление новых точек в список точек осей x, y
     xdata.append(x)
     ydata.append(y)
+    zdata.append(z)
     line.set_data(xdata, ydata)
     return line,
- 
  
 # Заголовок анимации
 plt.title('Создаем спираль в matplotlib')
