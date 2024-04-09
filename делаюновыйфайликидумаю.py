@@ -15,7 +15,8 @@ def init():
     return line,
  
  
-xdata, ydata = [], []
+ 
+xdata, ydata, zdata = [], [],  []
  
  
 # функция анимации
@@ -25,18 +26,18 @@ def animate(i):
     # x, y данные на графике
     x = t * np.sin(t)
     y = t * np.cos(t)
- 
+    z = t * 3
     # добавление новых точек в список точек осей x, y
     xdata.append(x)
     ydata.append(y)
     zdata.append(z)
-    line.set_data(xdata, ydata)
+    line.set_data(xdata, ydata,)
     return line,
  
 # Заголовок анимации
 plt.title('Создаем спираль в matplotlib')
 # Скрываем лишние данные
-plt.axis('off')
+#plt.axis('off')
  
 # Вызов анимации.
 anim = animation.FuncAnimation(fig, animate, init_func=init,
